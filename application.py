@@ -34,4 +34,3 @@ for name in namelist:
     time.sleep(5)
 
 driver.quit()
-# unreadMsgs = browser.find_elements_by_xpath(".//span[span[@class='unread-count icon-meta'] and not(span[@class='icon icon-meta icon-muted'])]")
