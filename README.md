@@ -18,7 +18,7 @@ Python 3.x with selenium installed
 
 ## Working of the bot
 
+![reply](https://user-images.githubusercontent.com/45245975/91994219-fd8a7700-ed53-11ea-9666-c8c348adbb91.PNG)
 After every 5 minutes, the bot checks for every person you've specified in the closefriends list, that if there is any unread text from their side or not. 
 If you've received one, then it replies with the message specified.
-![reply](https://user-images.githubusercontent.com/45245975/91994219-fd8a7700-ed53-11ea-9666-c8c348adbb91.PNG)
 Else does nothing.
