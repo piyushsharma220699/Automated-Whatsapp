@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
 import time
 
 PATH="C:\Program Files (x86)\chromedriver.exe"
@@ -29,23 +30,33 @@ for name in namelist:
     time.sleep(2)
 
     # Type the name of contact
-    getsearchbox.send_keys("Mom")
+    getsearchbox.send_keys(name)
     time.sleep(3)
 
-    # Click on the Chat
-    user=driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
-    user.click()
+    # Check if there is any unread message
+    unreadMsgs=False
+    
+    # If there is no unread message, then click on back in the search bar
+    if not unreadMsgs:
+        cutit=driver.find_element_by_xpath("//*[@id='side']/div[1]/div/button")
+        cutit.click()
+    
+    # If an unread message exists, reply to the contact
+    else:
+        # Click on the Chat
+        user=driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
+        user.click()
 
-    # Type the message on the Chatbox
-    textbox=driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
-    textbox.send_keys(text)
-    textbox.send_keys(name)
-    textbox.send_keys(text2)
+        # Type the message on the Chatbox
+        textbox=driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
+        textbox.send_keys(text)
+        textbox.send_keys(name)
+        textbox.send_keys(text2)
 
-    # Send Message
-    send=driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button')
-    send.click()
+        # Send Message
+        send=driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button')
+        send.click()
 
-    time.sleep(5)
+        time.sleep(5)
 
 driver.quit()
