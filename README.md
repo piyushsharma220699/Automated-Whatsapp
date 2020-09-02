@@ -14,3 +14,9 @@ Python 3.x with selenium installed
 1. Run the code.
 2. The code will automatically open Whatsapp Web in Chrome where you're supposed to scan the QR code.
 3. Sleep Well! :)
+
+## Working of the bot
+
+After every 5 minutes, the bot checks for every person you've specified in the closefriends list, that if there is any unread text from their side or not. 
+If you've received one, then it replies with the message specified.
+Else does nothing.
