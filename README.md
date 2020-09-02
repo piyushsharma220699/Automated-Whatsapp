@@ -1,6 +1,8 @@
 # Automated Whatsapp
 
-After I sleep, many a times some of my close friends whatsapp me regarding some work expecting that I'm awake and will reply soon(which ain't possible for sure). Thus, I made this whatsapp bot in PYTHON 3.x which tells your closed friends that you're sleeping and will reply as soon as you get up!
+Usually, my close friends WhatsApp me late at night regarding some work thinking that I'm awake and will reply before morning. 
+Thus, I made this WhatsApp bot using selenium in Python which automatically responds to your close friend's text (if they send one) that you're sleeping and thus won't be able to reply before morning!
+Also, when you wake up, you'll know who texted you!
 
 ## Requirements
 Python 3.x with selenium installed
