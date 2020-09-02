@@ -1,4 +1,9 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import time
 
 PATH="C:\Program Files (x86)\chromedriver.exe"
@@ -16,7 +21,17 @@ time.sleep(10)
 # List of names to which you want to send the message
 namelist = ["Meow","Mom"]
 
+
 for name in namelist:
+    # Click on the search-bar 
+    getsearchbox = driver.find_element_by_xpath("//div[@class ='_3FRCZ copyable-text selectable-text']")
+    getsearchbox.click()
+    time.sleep(2)
+
+    # Type the name of contact
+    getsearchbox.send_keys("Mom")
+    time.sleep(3)
+
     # Click on the Chat
     user=driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
     user.click()
