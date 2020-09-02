@@ -57,5 +57,8 @@ while(1):
             send.click()
 
             time.sleep(5)
+    
+    # The code will run again after 300 seconds (5 Minutes)
+    time.sleep(300)
 
 driver.quit()
