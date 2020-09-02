@@ -6,6 +6,7 @@ After I sleep, many a times some of my close friends whatsapp me regarding some 
 Python 3.x with selenium installed
 
 **Install Python from here:** https://www.python.org/downloads/
+
 **Install Selenium Using command:** pip install selenium
 
 ## How to use the bot?
