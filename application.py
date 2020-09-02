@@ -14,7 +14,7 @@ text2=", He is sleeping right now! He will reply to your texts when he gets up. 
 time.sleep(10)
 
 # List of names to which you want to send the message
-namelist = ["Meow","Mom"]
+namelist = ["Divyam Kalra","Vivek Raj","Mom"]
 
 while(1):
     for name in namelist:
@@ -55,6 +55,9 @@ while(1):
             # Send Message
             send=driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button')
             send.click()
+
+            # Print in contact name in the terminal
+            print(name,"texted you!")
 
             time.sleep(5)
     
