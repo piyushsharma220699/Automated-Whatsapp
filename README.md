@@ -24,3 +24,7 @@ Python 3.x with selenium installed
 After every 5 minutes, the bot checks for every person you've specified in the closefriends list, that if there is any unread text from their side or not. 
 If you've received one, then it replies with the message specified.
 Else does nothing.
+
+## Limitations(Future Scope)
+1. This is a bot for website verison of Whatsapp(Whatsapp Web) only, however we can extend it to the Desktop Application version too.
+2. The QR code needs to be scanned manually every time you run the code.
