@@ -28,3 +28,4 @@ Else does nothing.
 ## Limitations(Future Scope)
 1. This is a bot for website verison of Whatsapp(Whatsapp Web) only, however we can extend it to the Desktop Application version too.
 2. The QR code needs to be scanned manually every time you run the code.
+3. Security concern is there as one is supposed to keep the Whatsapp Web open the whole night.
