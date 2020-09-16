@@ -14,7 +14,7 @@ Also, when you wake up, you'll know who texted you!
 
 **Install Chrome Driver:**
 1. Go to Customize and Control Google Chrome > Help > About Google Chrome to check the version of Chrome Driver.
-
+![save2](https://user-images.githubusercontent.com/45245975/93358162-c7261f00-f85e-11ea-8ac2-038c65b2c4bf.PNG)
 
 2. Click on https://chromedriver.chromium.org/downloads and download the desired driver.
 
