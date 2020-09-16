@@ -5,11 +5,18 @@ Thus, I made this WhatsApp bot using selenium in Python which automatically resp
 Also, when you wake up, you'll know who texted you!
 
 ## Requirements
-Python 3.x with selenium installed
+1. Python 3.x with selenium installed
+2. Chrome Driver
 
 **Install Python from here:** https://www.python.org/downloads/
 
 **Install Selenium Using command:** pip install selenium
+
+**Install Chrome Driver:**
+1. Go to Customize and Control Google Chrome > Help > About Google Chrome to check the version of Chrome Driver.
+
+
+2. Click on https://chromedriver.chromium.org/downloads and download the desired driver.
 
 ## How to use the bot?
 
@@ -28,4 +35,4 @@ Else does nothing.
 ## Limitations(Future Scope)
 1. This is a bot for website verison of Whatsapp(Whatsapp Web) only, however we can extend it to the Desktop Application version too.
 2. The QR code needs to be scanned manually every time you run the code.
-3. Security concern is there as one is supposed to keep the Whatsapp Web open the whole night.
+3. Security concern is there as one is supposed to keep the Whatsapp Web open the whole night, however you can run the code and put the laptop on sleep mode the code will still run.
